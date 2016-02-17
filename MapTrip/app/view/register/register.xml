@@ -1,4 +1,22 @@
 <Page loaded="onPageLoaded">
-  <Label text="Hello, world!"/>
+
+ 
+
+   <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
+
+   <StackLayout class="registerform" orientation="vertical" TextWrapt="true" width="strech" height="250">
+        <Label text="Name:" />
+        <TextField id="name" width="200"/>
+
+        <Label text="Email:" />
+        <TextField id="email" width="200" color="white"/>
+
+        <Label text="Twitter Handle:" />
+        <TextField id="twitterHandle" text="@" width="200" background-color="white"/>
+
+        <Button id="signUpButton" text="Sign Up" width="100"/>
+  </StackLayout>
+
+  </StackLayout>
    
 </Page>
