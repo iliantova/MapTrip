@@ -1,0 +1,4 @@
+<Page loaded="onPageLoaded">
+  <Label text="Hello, world!"/>
+   <Button text="Navigate by Page Name" tap="navWithPageName" class="btn-mine"/>
+</Page>
