@@ -1,7 +1,6 @@
 page {
 
 	background-color: white;
-	color: black;
 }
 .registerform{
 	background-color: white;
@@ -17,4 +16,16 @@ page {
 	color: white;
 	border-color: white;
 
+}
+
+label{
+
+vertical-align: bottom;
+font-size: 17;
+font-style: verdana;
+color: grey;
+}
+
+button {
+	background-image:  url("/gradient_button.png");
 }
