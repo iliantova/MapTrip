@@ -13,7 +13,7 @@
         <Label text="Comfirm Password:" col="0" row="2" TextWrapt="true"/>
         <TextField id="confirmpassword" text="@" width="200" col="1" row="2"/>
 
-        <Button id="signUpButton" text="Sign Up" width="100" col="0" row="3"/>
+        <Button id="signUpButton" colSpan="2" text="Sign Up" width="100" col="0" row="3"/>
   
   </GridLayout>
   </StackLayout>
