@@ -7,6 +7,8 @@
 button {
     font-size: 42;
     horizontal-align: center;
+	background-image:  url("~/app/gradient_button.png");
+
 }
 
 .message {
