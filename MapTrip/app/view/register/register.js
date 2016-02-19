@@ -15,7 +15,7 @@ var pageModules = {
     var passwordTextField = view.getViewById(page, "password");
     var confirmTextField = view.getViewById(page, "confirmpassword");
     var signUpButton = view.getViewById(page, "signUpButton");
-    signUpButton.backgroundImage = "~/view/register/gradient_button.png";
+   // signUpButton.backgroundImage = "~/view/register/gradient_button.png";
            topmost = frameModule.topmost();
 
           // if(passwordTextField.text === confirmTextField.text || usernameTextField.text === "" || passwordTextField.text === "")
