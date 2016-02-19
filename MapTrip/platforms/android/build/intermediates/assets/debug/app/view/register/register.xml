@@ -1,7 +1,4 @@
 <Page loaded="onPageLoaded">
-
- 
-
    <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
 <GridLayout class="registerform" columns="*,3*" rows="*,*,*,*" width="strech" height="250">
         <Label text="Userame:" col="0" row="0" />
@@ -16,6 +13,5 @@
         <Button id="signUpButton" colSpan="2" text="Sign Up" width="100" col="0" row="3"/>
   
   </GridLayout>
-  </StackLayout>
-   
+  </StackLayout> 
 </Page>

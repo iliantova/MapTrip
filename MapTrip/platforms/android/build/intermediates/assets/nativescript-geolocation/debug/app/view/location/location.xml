@@ -1,0 +1,5 @@
+<Page>
+    <StackLayout>
+        <Button text="Get Current Location" tap="buttonGetLocationTap"/>
+    </StackLayout>
+</Page>

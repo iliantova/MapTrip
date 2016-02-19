@@ -6,19 +6,18 @@ var pageModules = (function() {
   var topmost;
 var pageModules = {
         
-        pageLoaded: function(args) {
-            var page = args.object;
-           topmost = frameModule.topmost();
-        },
+    pageLoaded: function(args) {
+      var page = args.object;
+      topmost = frameModule.topmost();
+    },
 
-        navWithPageName: function() {
-            var topmost = frameModule.topmost();
-    topmost.navigate("view/register/register");
-        }
+    navWithPageName: function() {
+      var topmost = frameModule.topmost();
+      topmost.navigate("view/register/register");
+    }
+  }
 
-        }
-
-         return pageModules;
+return pageModules;
 })();
 
 exports.pageLoaded = pageModules.pageLoaded;
