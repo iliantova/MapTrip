@@ -22,5 +22,19 @@
         sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
         <dex dex="C:\Users\Velina\Desktop\Git\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\debug\widgets-a86d5c55ba0361a15060d3753ea5bb610ca413ea.jar" />
     </item>
+    <item
+        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\libs\nativescript.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e49ee2301dce2f85edd44f634fd45ad92df9e00a">
+        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\debug\nativescript-78dc622a82ba4d16b85c5a9d33932c8c77ad7f62.jar" />
+    </item>
+    <item
+        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\libs\widgets.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
+        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\debug\widgets-e8911d42978f9673e1607125ef01bce5a7e15691.jar" />
+    </item>
 
 </items>
