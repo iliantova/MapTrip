@@ -1,4 +1,15 @@
 <Page loaded="onPageLoaded">
-  <Label text="Hello, world!"/>
-   <Button text="Navigate by Page Name" tap="navWithPageName" class="btn-mine"/>
+   <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="strech" >
+<StackLayout class="registerform" width="strech" height="strech">
+        
+        <TextField id="username" hint="Username" text="{{ username }}"/>
+
+        <TextField id="password" hint="Password" secure="true" text="{{ password }}" width="200"/>
+
+        <Button id="registerUpButton" text="Login" width="100" tap="{{ loginButton }}"/>
+
+        <Button id="signUpButton"  text="SignUp" width="100"  tap="{{ register }}"/>
+  
+  </StackLayout>
+  </StackLayout> 
 </Page>

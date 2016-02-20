@@ -1,4 +1,4 @@
-﻿/*.title {
+﻿.title {
     font-size: 30;
     horizontal-align: center;
     margin: 20;
@@ -16,4 +16,6 @@ button {
     color: #284848;
     horizontal-align: center;
 }
-*/
+button {
+	background-image:  url("~/view/register/gradient_button.png");
+}

@@ -2,46 +2,25 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\libs\widgets.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\debug\widgets-e8911d42978f9673e1607125ef01bce5a7e15691.jar" />
-    </item>
-    <item
-        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\internal_impl-23.1.1-05eda771878e9043c96c054d31046fb0bd3d6f0f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\libs\nativescript.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e49ee2301dce2f85edd44f634fd45ad92df9e00a">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\debug\nativescript-78dc622a82ba4d16b85c5a9d33932c8c77ad7f62.jar" />
-    </item>
-    <item
-        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\classes-84d2bb010fd1e0bad25a9ab2d3df28456bd6bbe5.jar" />
-    </item>
-    <item
-        jar="C:\Users\Velina\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jar="C:\Users\iilant\android-sdks\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\support-annotations-23.1.1-1133a82856ff5d7df622de5fd66f9d4c90fd3842.jar" />
+        <dex dex="C:\Users\iilant\Desktop\MapTrip\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\support-annotations-23.1.1-1c7191a1d81689d431eca34b7b098b54085e766d.jar" />
     </item>
     <item
-        jar="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jar="C:\Users\iilant\Desktop\MapTrip\MapTrip\MapTrip\platforms\android\libs\widgets.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="C:\Users\Velina\Desktop\Git3\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\classes-0e3eb5f7e39209725ac64d5006a6d769c15959a9.jar" />
+        sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
+        <dex dex="C:\Users\iilant\Desktop\MapTrip\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\widgets-7d476dcd798611d00359802018bdc2cfff146a20.jar" />
+    </item>
+    <item
+        jar="C:\Users\iilant\Desktop\MapTrip\MapTrip\MapTrip\platforms\android\libs\nativescript.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e49ee2301dce2f85edd44f634fd45ad92df9e00a">
+        <dex dex="C:\Users\iilant\Desktop\MapTrip\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\nativescript-0d8dd00af298efb52175d0a60f3fef9dd845ce05.jar" />
     </item>
 
 </items>

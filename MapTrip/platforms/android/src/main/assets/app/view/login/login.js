@@ -1,24 +1,14 @@
-var frameModule = require("ui/frame");
-var pagesModule = require("ui/page");
+var modelModule = require("./login-view-model");
+var model = modelModule.LoginView;
 
-var pageModules = (function() {
 
-  var topmost;
-var pageModules = {
-        
-    pageLoaded: function(args) {
-      var page = args.object;
-      topmost = frameModule.topmost();
-    },
+function onPageLoaded(args) {
+  var page = args.object;
+  page.bindingContext = model;
 
-    navWithPageName: function() {
-      var topmost = frameModule.topmost();
-      topmost.navigate("view/register/register");
-    }
-  }
+  model.username = page.getViewById(page,'username');
+  model.password = page.getViewById(page,'password');
 
-return pageModules;
-})();
+}
 
-exports.pageLoaded = pageModules.pageLoaded;
-exports.navWithPageName = pageModules.navWithPageName;
+exports.onPageLoaded = onPageLoaded;

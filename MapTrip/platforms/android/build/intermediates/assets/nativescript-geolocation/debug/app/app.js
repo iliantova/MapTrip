@@ -1,5 +1,5 @@
 var application = require("application");
-application.mainModule = "view/menu/menu";
+application.mainModule = "view/login/login";
 application.cssFile = "./app.css";
 application.start();
 
