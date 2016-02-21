@@ -1,6 +1,6 @@
 var observable = require("data/observable");
 var Everlive = require('~/everlive.all.min');
-//var everlive = new Everlive("49mwdp1w40tbjnlg");
+var AppSettings = require("application-settings");
 
 var everlive = new Everlive({
     appId: "49mwdp1w40tbjnlg",
@@ -30,8 +30,7 @@ var topmost = frameModule.topmost();
 console.log("Miid");
  topmost.navigate("view/menu/menu");
 
- console.log("after");
-  
+ 
       var username = LoginView.username;
       var password = LoginView.password;
 console.log(username);
@@ -40,8 +39,11 @@ console.log(everlive.authentication);
 everlive.authentication.login(username, password, function(data) {
         var accessToken = data.result.access_token;
         console.log(JSON.stringify(data));
-        //alert("Successfully logged the user in!");
+        alert("Successfully logged the user in!");
        
+        AppSettings.setString(TOKEN_DATA_KEY, data.result.access_token);
+                            AppSettings.setString(USER_ID, data.result.principal_id);
+
     }, function(err) {
         console.log(JSON.stringify(error));
         //alert("Unfortunately an error occurred: " + err.message);

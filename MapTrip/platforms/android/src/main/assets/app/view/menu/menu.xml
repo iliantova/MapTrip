@@ -2,7 +2,7 @@
    <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
         <Button class="menuButton" text="Areas" tap="login"/>
         <Button class="menuButton" text="My Location" tap="location"/>
-        <Button class="menuButton" text="Visited Areas"/>
+        <Button class="menuButton" text="Visited Areas" tap="regions"/>
         <Button class="menuButton" text="Visited List"/>
   </StackLayout> 
 </Page>
