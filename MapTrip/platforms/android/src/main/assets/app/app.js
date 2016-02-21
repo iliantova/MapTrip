@@ -1,5 +1,4 @@
 var application = require("application");
-application.mainModule = "view/location/location";
+application.mainModule = "view/map/map";
 application.cssFile = "./app.css";
 application.start();
-

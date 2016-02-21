@@ -50,11 +50,10 @@ function buttonGetLocationTap(args) {
     });
 }
 
+
 function getInfo(args) {
 	console.log("Inside button with closest location");
 	var label = getElementById("infoLabel");
-
-	console.log(markers[closest].title);
 
 	if(markers[closest].title == "Шумен") {
 		label.text = "Шумен град";
