@@ -6,21 +6,21 @@
         jumboMode="false"
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="C:\Users\Velina\Desktop\Git new new\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\support-annotations-23.1.1-1133a82856ff5d7df622de5fd66f9d4c90fd3842.jar" />
+        <dex dex="C:\Users\Velina\Desktop\Git 4\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocationnativescript-google-maps-sdk\debug\support-annotations-23.1.1-1133a82856ff5d7df622de5fd66f9d4c90fd3842.jar" />
     </item>
     <item
-        jar="C:\Users\Velina\Desktop\Git new new\MapTrip\MapTrip\platforms\android\libs\widgets.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
-        <dex dex="C:\Users\Velina\Desktop\Git new new\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\widgets-db2cfd65c92fa1c362ad24035ec198a1c074bd4f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Velina\Desktop\Git new new\MapTrip\MapTrip\platforms\android\libs\nativescript.jar"
+        jar="C:\Users\Velina\Desktop\Git 4\MapTrip\MapTrip\platforms\android\libs\nativescript.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="e49ee2301dce2f85edd44f634fd45ad92df9e00a">
-        <dex dex="C:\Users\Velina\Desktop\Git new new\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocation\debug\nativescript-64a7d784fce9edb1a838128c486e2450c0c174db.jar" />
+        <dex dex="C:\Users\Velina\Desktop\Git 4\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocationnativescript-google-maps-sdk\debug\nativescript-2e363104a4d5e0611cdc8f8012fc3a9fefe955a9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Velina\Desktop\Git 4\MapTrip\MapTrip\platforms\android\libs\widgets.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ff3c62a8eb22f0111b882125ad1579dc6273fd90">
+        <dex dex="C:\Users\Velina\Desktop\Git 4\MapTrip\MapTrip\platforms\android\build\intermediates\pre-dexed\nativescript-geolocationnativescript-google-maps-sdk\debug\widgets-e56e2504a016eccfd2f46c5da22f9668d7f6d46e.jar" />
     </item>
 
 </items>

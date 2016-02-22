@@ -1,0 +1,14 @@
+<Page loaded="onPageLoaded">
+  
+
+  <ListView items="{{ localImagesArray }}" itemTap="regionItemTapped" width="strech" height="strech" >
+  	<ListView.itemTemplate>
+  		<StackLayout>
+  			<Label text="{{ Name }}"/>
+  		<Image src="{{ Picture }}" stretch="none"/>
+		</StackLayout>
+	</ListView.itemTemplate>
+</ListView>
+ 
+ 
+</Page>
