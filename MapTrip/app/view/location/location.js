@@ -17,18 +17,15 @@ function loaded() {
 
 var data = everlive.data('Sait');
     data.get().then(function(data){
-
              for(var i = 0; data.result.length; i++) {
 
                markersAll.push(data.result[i]);
 
-               //Without these console lines not working
                console.log("ADDED OBJECT TO ARRAY " + markersAll[i].Name); 
                console.log("ADDED OBJECT TO ARRAY " + markersAll[i].Location.longitude);
                console.log(markersAll.length);
                console.log("END");
                console.log("In for cicle ---> " + markersAll.length);
-
               }
            },
          function(error){
@@ -38,7 +35,8 @@ var data = everlive.data('Sait');
 
 
 function buttonGetLocationTap(args) {
-    console.log("Array length when button clicked --- >" + markersAll.length);
+
+    var button = getElementById("closestLocation");
 
     var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).  
     then(function(loc) {
@@ -46,23 +44,15 @@ function buttonGetLocationTap(args) {
 
         var lat1 = loc.latitude;
         var lon1 = loc.longitude;
-        console.log("LATITUDE" + lat1); 
-        console.log("Longitude" + lon1);
 
         var pi = Math.PI;
         var R = 6371;
         var distances = [];
-
-
-        console.log(markersAll.length);
     
-    for( i=0;i<markersAll.length - 1; i++ ) {  
+    for( i = 0; i < markersAll.length - 1; i++ ) {  
  
         var lat2 = markersAll[i].Location.latitude;
         var lon2 = markersAll[i].Location.longitude; 
-        console.log("Closest in for cicle --->" + markersAll[i].Name);
-        console.log(lat2);
-        console.log(lon2);
  
         var chLat = lat2-lat1;
         var chLon = lon2-lon1;
@@ -83,30 +73,22 @@ function buttonGetLocationTap(args) {
         }
     }
 
-    //Without this comment not working!
-    console.log("HELLO");
+    button.on('swipe', function (args) {
 
-    var button = getElementById("Hi");
-    console.log("CLOSEST " + markersAll[closest].Name);
+    var label = getElementById("infoLabel");
+    label.text = markersAll[closest].InterestingInformation;
+    });
+
     button.text = markersAll[closest].Name;
         }
     }, function(e){
         console.log("Error: " + e.message);
+        button.text = "No location at the moment";
     });
 }
 
-
 function getInfo(args) {
     console.log("Inside button with closest location");
-    var label = getElementById("infoLabel");
-
-    if(markersAll[closest].Name == "Shumen") {
-        label.text = "Шумен град";
-    } else if(markersAll[closest].Name == "Vratsa") {
-        label.text = "Враца град";
-    }else if(markersAll[closest].Name == "Rila Lakes") {
-        label.text = "Рила планина";
-    }
 }
 
 exports.buttonGetLocationTap = buttonGetLocationTap;

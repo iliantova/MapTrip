@@ -1,7 +1,7 @@
 <Page loaded="loaded">
     <StackLayout>
         <Button id="buttonForClick" text="Find closest location" tap="buttonGetLocationTap"/>
-        <Button id="Hi" tap="getInfo"/>
+        <Button id="closestLocation" tap="getInfo"/>
         <Label id="infoLabel" text="Hello"/>
     </StackLayout>
 </Page>
