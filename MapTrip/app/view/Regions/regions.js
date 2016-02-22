@@ -8,4 +8,23 @@ function onPageLoaded(args) {
 
  }
 
-exports.onPageLoaded = onPageLoaded;
+ function regionItemTapped(args) {
+  var page = args.object.page;
+  var model = page.bindingContext;
+  var index = args.index;
+  var region = model.localImagesArray.getItem(index);
+  console.dir(region);
+  var options = {
+    moduleName: './views/details/details',
+    context: region
+  };
+  frame.topmost()
+    .navigate(options);
+}
+
+module.exports = {
+  regionItemTapped,
+  onPageLoaded
+};
+
+//exports.onPageLoaded = onPageLoaded;

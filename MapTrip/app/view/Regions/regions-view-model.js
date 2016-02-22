@@ -2,40 +2,69 @@ var observable = require("data/observable");
 var observableArrayModule = require("data/observable-array");
 var Everlive = require('~/everlive.all.min');
 var everlive = new Everlive({
-    appId: "49mwdp1w40tbjnlg",
-    scheme: "https"
+  appId: "49mwdp1w40tbjnlg",
+  scheme: "https"
 });
 
 var LoginView = new observable.Observable();
 
 LoginView.localImagesArray = new observableArrayModule.ObservableArray([]);
-
+LoginView.Array = new Array();
 
 var data = everlive.data('Regions');
+var files = everlive.data('Pictures');
+var urlPicture;
+
+  files.get().then(function(data) {
+       
+         for (var i = 0; i < data.result.length; i++) {
+           
+        ARRAYPICTURE.push(data.result[i]);
+
+         }
+  return LoginView.Array;
+      },
+      function(error) {
+        console.log('error');
+        console.log(JSON.stringify(error));
+      });
+
+
 data.get()
-    .then(function(data){
+.then(function(data){
+//console.dir(ARRAYPICTURE);
+for (var i = 0; i < data.result.length; i++){
 
-  for (var i = 0; i < data.result.length; i++) {
-            var newItem = data.result[i];
-           newItem.Picture = 'https://platform.telerik.com/bs/app/#/49mwdp1w40tbjnlg/data/types/7320f860-d64b-11e5-bd70-2f49940d1c4f/'+data.result[i].Picture;
-          LoginView.localImagesArray.push(newItem);
-           console.log(JSON.stringify(newItem));
-           console.log(LoginView.localImagesArray);
+for (var j = 0; j < ARRAYPICTURE.length; j++) {
 
-        }
+  console.log("arr" + ARRAYPICTURE[j].Id);
+  console.log("data" + data.result[i].Picture);
 
- LoginView.set("username", data.result[0].Name);
+  if (data.result[i].Picture == ARRAYPICTURE[j].Id) {
 
-        alert(JSON.stringify(data));
-        console.log(data.result[0].Name);
+    data.result[i].Picture = "https://api.everlive.com/v1/49mwdp1w40tbjnlg/files/"+ ARRAYPICTURE[j].PictureUrl +"/download";
+    LoginView.localImagesArray.push(data.result[i]);
 
-    return localImagesArray;
+  }
+  
+}
+
+}
+         
+
+  alert(JSON.stringify(data));
+
+  return localImagesArray;
 },
-    function(error){
-        alert(JSON.stringify(error));
-    });
+function(error){
+  alert(JSON.stringify(error));
+});
 
-    //console.log(LoginView.localImagesArray[0].Name);
+LoginView.regionsTap = function (args) {
 
+var index = args.index;
+console.log(index);
 
-exports.LoginView = LoginView;
+};
+
+    exports.LoginView = LoginView;

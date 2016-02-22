@@ -1,14 +1,14 @@
 <Page loaded="onPageLoaded">
-   <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="strech" >
-<StackLayout class="registerform" width="strech" height="strech">
-  <ListView items="{{ localImagesArray }}">
-  	<ListView.itemTemplate>
-  		<Label text="{{ Name }}" >
-  		<Image src="{{ Picture }}" stretch="none"  />
+  
 
-  		</Label>
-  </ListView.itemTemplate>
+  <ListView items="{{ localImagesArray }}" itemTap="regionItemTapped" width="strech" height="strech" >
+  	<ListView.itemTemplate>
+  		<StackLayout>
+  			<Label text="{{ Name }}"/>
+  		<Image src="{{ Picture }}" stretch="none"/>
+		</StackLayout>
+	</ListView.itemTemplate>
 </ListView>
-  </StackLayout>
-  </StackLayout> 
+ 
+ 
 </Page>
