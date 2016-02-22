@@ -1,0 +1,10 @@
+<Page navigatedTo="pageNavigatedTo">
+  <ListView id="saitDetailsList" items="{{ saitsListArray }}" itemTap="regionItemTapped" width="strech" height="strech" >
+  	<ListView.itemTemplate>
+  		<StackLayout>
+  			<Label text="{{ Name }}"/>
+  		<Image src="{{ Picture }}" />
+  			</StackLayout>
+	</ListView.itemTemplate>
+</ListView>
+</Page>

@@ -1,0 +1,8 @@
+<Page navigatedTo="pageNavigatedTo">
+    		<StackLayout>
+  			<Label text="{{ Name }}" wrapText="true"/>
+  			<Label text="{{ Description }}"/>
+  		    <Image src="{{ Picture }}" />
+  		     <Button id="visits"  text="SignUp" width="100"  tap="{{ visits }}"/>
+  		</StackLayout>
+</Page>
