@@ -25,11 +25,6 @@ data.get(query)
             for (var i = 0; i < data.result.length; i++) {
 
                 var visits = data.result[i];
-                //var str = visits.CreatedAt;
-                //var res = str.substring(0, 10);
-                // var data = new Date(data.result[i].CreatedAt);
-                //visits.CreatedAt = res;
-
                 console.log("befor" + i);
                 VisitsList.visitsArray.push(visits);
                 console.log("after" + i);

@@ -1,5 +1,5 @@
 <Page loaded="onPageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true">
-  <StackLayout>
-    <Button text="{{ message }}" heigth="200" tap="{{ tapAction }}"/>
-  </StackLayout>>
+    <StackLayout>
+        <Button text="{{ message }}" heigth="200" tap="{{ tapAction }}" />
+    </StackLayout>>
 </Page>

@@ -37,10 +37,10 @@ SaitsDetails.visits = function() {
 
     visit.create(visits,
         function(data) {
-            alert(JSON.stringify(data));
+            Toast.makeText("You visited this site").show();
         },
         function(error) {
-            alert(JSON.stringify(error));
+            Toast.makeText("Unfortunately an error occurred: " + error).show();
         });
 
 };

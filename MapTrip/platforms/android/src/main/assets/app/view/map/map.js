@@ -9,32 +9,32 @@ var everlive = new Everlive({
 });
 
 function OnMapReady(args) {
-  var mapView = args.object;
+    var mapView = args.object;
 
-  console.log("Setting a tiny marker...");
+    console.log("Setting a tiny marker...");
 
-  var data = everlive.data('Sait');
-	  data.get()
-          .then(function(data){
+    var data = everlive.data('Sait');
+    data.get()
+        .then(function(data) {
 
-              for(var i = 0; data.result.length; i++) {
-                  var latitude = data.result[i].Location.latitude;
-                  var longitute = data.result[i].Location.longitude;
+                for (var i = 0; data.result.length; i++) {
+                    var latitude = data.result[i].Location.latitude;
+                    var longitute = data.result[i].Location.longitude;
 
-                  var marker = new mapsModule.Marker();
-                  marker.title = data.result[i].Name;
-                  marker.snippet = data.result[i].Descriptions;
-                  marker.position = mapsModule.Position.positionFromLatLng(latitude, longitute);
-                  mapView.addMarker(marker);
-              }
-          },
-    	function(error){
-        console.log("Error");
-       });
- }
+                    var marker = new mapsModule.Marker();
+                    marker.title = data.result[i].Name;
+                    marker.snippet = data.result[i].Descriptions;
+                    marker.position = mapsModule.Position.positionFromLatLng(latitude, longitute);
+                    mapView.addMarker(marker);
+                }
+            },
+            function(error) {
+                console.log("Error");
+            });
+}
 
 function onMarkerSelect(args) {
-   console.log("Clicked on " +args.marker.title);
+    console.log("Clicked on " + args.marker.title);
 }
 
 exports.OnMapReady = OnMapReady;

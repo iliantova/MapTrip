@@ -1,10 +1,10 @@
 <Page loaded="onPageLoaded">
-  <ListView id="saitList" items="{{ localImagesArray }}" itemTap="regionItemTapped" width="strech" height="strech" >
-  	<ListView.itemTemplate>
-  		<StackLayout>
-  			<Label text="{{ Name }}"/>
-  		<Image src="{{ Picture }}" />
-		</StackLayout>
-	</ListView.itemTemplate>
-</ListView>
+    <ListView id="saitList" items="{{ localImagesArray }}" itemTap="regionItemTapped" width="strech" height="strech">
+        <ListView.itemTemplate>
+            <StackLayout>
+                <Label text="{{ Name }}" />
+                <Image src="{{ Picture }}" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
 </Page>

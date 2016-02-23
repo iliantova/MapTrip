@@ -3,12 +3,8 @@ var model = modelModule.RegisterView;
 
 
 function onPageLoaded(args) {
-    var page = args.object;
-    page.bindingContext = model;
-
-    model.username = page.getViewById(page, 'username');
-    model.password = page.getViewById(page, 'password');
-
+  var page = args.object;
+  page.bindingContext = model;
 }
 
 exports.onPageLoaded = onPageLoaded;
