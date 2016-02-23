@@ -1,7 +1,7 @@
 var geolocation = require("nativescript-geolocation");
 var mapsModule = require("nativescript-google-maps-sdk");
 var nativescriptDom = require( "nativescript-dom" );
-
+var frame = require("ui/frame");
 var observable = require("data/observable");
 var observableArrayModule = require("data/observable-array");
 var Everlive = require('~/everlive.all.min');
@@ -89,6 +89,17 @@ function buttonGetLocationTap(args) {
 
 function getInfo(args) {
     console.log("Inside button with closest location");
+    var sait = markersAll[closest];
+    if (sait) {
+
+       var options = {
+    moduleName: './view/detail-sait/detail-sait',
+    context: sait
+  };
+  frame.topmost()
+    .navigate(options);
+    }
+
 }
 
 exports.buttonGetLocationTap = buttonGetLocationTap;

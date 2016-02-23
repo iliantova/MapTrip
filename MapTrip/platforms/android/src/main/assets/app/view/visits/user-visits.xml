@@ -1,0 +1,10 @@
+<Page loaded="onPageLoaded">
+  <ListView id="saitList" items="{{ visitsArray }}" itemTap="regionItemTapped" width="strech" height="strech" >
+  	<ListView.itemTemplate>
+  		<StackLayout>
+  			<Label text="{{ Sait }}"/>
+  			<Label text="{{ CreatedAt }}"/>
+		</StackLayout>
+	</ListView.itemTemplate>
+</ListView>
+</Page>

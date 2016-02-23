@@ -1,6 +1,7 @@
 var observable = require("data/observable");
 var observableArrayModule = require("data/observable-array");
 var AppSettings = require("application-settings");
+var frameModule = require("ui/frame")
 var Everlive = require('~/everlive.all.min');
 var everlive = new Everlive({
   appId: "49mwdp1w40tbjnlg",
@@ -23,19 +24,14 @@ SaitsDetails.DetailView = function (name){
 	SaitsDetails.set("Picture", name.Picture);
     nameSait = name.Name;
 	console.dir(name);
-
-
-
 };
 
 SaitsDetails.visits = function () {
-
-
-var stringValue = AppSettings.getString(USER_ID);
+var user = AppSettings.getString(USER_ID);
 var visits = {
 
 Sait: nameSait,
-User: stringValue
+User: user
 
 };
 
@@ -46,6 +42,13 @@ User: stringValue
     function(error){
         alert(JSON.stringify(error));
    });
+
+ };
+
+ SaitsDetails.camera = function () {
+
+var topmost = frameModule.topmost();
+ topmost.navigate("view/takePhoto/takePhoto");
 
  };
 

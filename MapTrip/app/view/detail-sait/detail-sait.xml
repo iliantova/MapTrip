@@ -3,6 +3,7 @@
   			<Label text="{{ Name }}" wrapText="true"/>
   			<Label text="{{ Description }}"/>
   		    <Image src="{{ Picture }}" />
-  		     <Button id="visits"  text="SignUp" width="100"  tap="{{ visits }}"/>
+  		     <Button id="visits"  text="Visit" width="200" height="100" tap="{{ visits }}"/>
+  		     <Button id="visits"  text="Camera" width="200" height="100" tap="{{ camera }}"/>
   		</StackLayout>
 </Page>

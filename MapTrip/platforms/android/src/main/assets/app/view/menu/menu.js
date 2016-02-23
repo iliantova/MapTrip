@@ -14,3 +14,8 @@ exports.regions = function() {
     var topmost = frameModule.topmost();
     topmost.navigate("/view/Regions/regions");
 };
+
+exports.visited = function() {
+    var topmost = frameModule.topmost();
+    topmost.navigate("/view/visits/user-visits");
+};
