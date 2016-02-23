@@ -1,6 +1,7 @@
 var observable = require("data/observable");
 var observableArrayModule = require("data/observable-array");
 var AppSettings = require("application-settings");
+var Toast = require("nativescript-toast");
 var frameModule = require("ui/frame")
 var Everlive = require('~/everlive.all.min');
 var everlive = new Everlive({
