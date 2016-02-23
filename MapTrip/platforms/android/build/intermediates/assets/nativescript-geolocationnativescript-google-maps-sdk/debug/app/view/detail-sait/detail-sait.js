@@ -4,10 +4,9 @@ var frame = require("ui/frame");
 var model = modelModule.SaitsDetails;
 
 function pageNavigatedTo(args) {
-	console.log('tuka sum');
+    console.log('tuka sum');
     var page = args.object;
     var sait = args.context;
-  // console.dir(sait);
     page.bindingContext = model;
     model.DetailView(sait);
 }

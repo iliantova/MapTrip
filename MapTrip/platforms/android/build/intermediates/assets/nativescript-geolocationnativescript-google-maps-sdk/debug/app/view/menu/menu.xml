@@ -1,8 +1,8 @@
 <Page loaded="onPageLoaded">
-   <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
-        <Button class="menuButton" text="Areas" tap="login"/>
-        <Button class="menuButton" text="My Location" tap="location"/>
-        <Button class="menuButton" text="Visited Areas" tap="regions"/>
-        <Button class="menuButton" text="gg" tap="visited"/>
-  </StackLayout> 
+    <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500">
+        <Button class="menuButton" text="Map" tap="map" />
+        <Button class="menuButton" text="Saits" tap="regions" />
+        <Button class="menuButton" text="My Location" tap="location" />
+        <Button class="menuButton" text="Visited Areas" tap="visited" />
+    </StackLayout>
 </Page>

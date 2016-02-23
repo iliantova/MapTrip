@@ -7,6 +7,7 @@ var directory = "/res/";
 var cameraModule = require("camera");
 var Everlive = require('~/everlive.all.min');
 var everlive = new Everlive("49mwdp1w40tbjnlg");
+var imageModule = require("ui/image");
 
 
 var photoAlbumModel = new observable.Observable();

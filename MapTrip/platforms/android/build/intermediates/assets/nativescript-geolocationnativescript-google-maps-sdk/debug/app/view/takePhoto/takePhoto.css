@@ -1,9 +1,9 @@
 page {
-    /* CSS styles */
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
 }
 
 Button {
-  background-color: gray;
-  font-size: 20;
-  color: #3BB9FF; 
+    background-color: gray;
+    font-size: 20;
+    color: #3BB9FF;
 }
