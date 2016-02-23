@@ -3,6 +3,7 @@ var Everlive = require('~/everlive.all.min');
 var AppSettings = require("application-settings");
 var Toast = require("nativescript-toast");
 
+
 var everlive = new Everlive({
     appId: "49mwdp1w40tbjnlg",
     scheme: "https"
