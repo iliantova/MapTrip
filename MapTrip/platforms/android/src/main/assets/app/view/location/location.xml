@@ -1,13 +1,13 @@
 <Page loaded="loaded">
     <StackLayout>
-    	<StackLayout class="registerform" width="strech" height="strech">
-        <Button id="buttonForClick" text="Find closest sait" tap="buttonGetLocationTap"/>
-        <Label text="The sait that is closest to you is: "/>
-        <Label id="closestLocation" tap="getInfo"/>
-        <Label class="explanation" text="Swipe the name for more interesting information. "/>
-        <Label class="explanation" text="Tap if you want to see more details."/>
-        <Label />
-        <Label id="infoLabel"/>
-    </StackLayout>>
+        <StackLayout class="registerform" width="strech" height="strech">
+            <Button id="buttonForClick" text="Find closest sait" tap="buttonGetLocationTap" />
+            <Label text="The sait that is closest to you is: " />
+            <Label id="closestLocation" tap="getInfo" />
+            <Label class="explanation" text="Swipe the name for more interesting information. " />
+            <Label class="explanation" text="Tap if you want to see more details." />
+            <Label />
+            <Label id="infoLabel" />
+        </StackLayout>>
     </StackLayout>
 </Page>

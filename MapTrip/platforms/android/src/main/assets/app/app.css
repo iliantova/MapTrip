@@ -1,34 +1,3 @@
-﻿/*.title {
-    font-size: 30;
-    horizontal-align: center;
-    margin: 20;
-}
-
-button {
-    font-size: 42;
-    horizontal-align: center;
-	background-image:  url("~/app/gradient_button.png");
-
-}
-
-.message {
-    font-size: 20;
-    color: #284848;
-    horizontal-align: center;
-}
-button {
-	
-}*/
-
-/*page {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
-}*/
-
-/*image {
-    width:350;
-    height:350; 
-}*/
-
-label {
+﻿label {
     horizontal-align: center;
 }

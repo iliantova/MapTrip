@@ -1,25 +1,24 @@
 page {
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
 }
-.registerform{
-	background-color: white;
-	opacity: 0.7;
-}
-.registerformImage{
 
-	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
+.registerform {
+    background-color: white;
+    opacity: 0.7;
 }
 
-#email{
-
-	color: white;
-	border-color: white;
+.registerformImage {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
 }
 
-label{
+#email {
+    color: white;
+    border-color: white;
+}
 
-vertical-align: bottom;
-font-size: 17;
-font-style: verdana;
-color: grey;
+label {
+    vertical-align: bottom;
+    font-size: 17;
+    font-style: verdana;
+    color: grey;
 }

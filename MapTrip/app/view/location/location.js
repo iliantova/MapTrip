@@ -32,7 +32,6 @@ function loaded() {
         });
 }
 
-
 function buttonGetLocationTap(args) {
 
     var labelClosest = getElementById("closestLocation");
@@ -98,8 +97,6 @@ function getInfo(args) {
         frame.topmost()
             .navigate(options);
     }
-    
-
 }
 
 exports.buttonGetLocationTap = buttonGetLocationTap;

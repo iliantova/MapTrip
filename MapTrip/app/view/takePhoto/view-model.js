@@ -15,18 +15,18 @@ photoAlbumModel.set("message", "Add new photos");
 
 var backendArray = new observableArrayModule.ObservableArray();
 
-photoAlbumModel.tapAction = function () {
+photoAlbumModel.tapAction = function() {
 
     cameraModule.takePicture({
         width: 300,
         height: 300,
         keepAspectRatio: true
-    }).then(function (picture) {
+    }).then(function(picture) {
         var item = {
             itemImage: picture
         };
         backendArray.push(item);
-        
+
 
         var file = {
             "Filename": Math.random().toString(36).substring(2, 15) + ".jpg",
@@ -36,8 +36,8 @@ photoAlbumModel.tapAction = function () {
 
 
         everlive.Files.create(file,
-            function (data) {},
-            function (error) {});
+            function(data) {},
+            function(error) {});
 
     });
 
