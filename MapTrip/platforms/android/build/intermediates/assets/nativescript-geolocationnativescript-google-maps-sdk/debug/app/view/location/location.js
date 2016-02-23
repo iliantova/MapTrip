@@ -1,28 +1,59 @@
 var geolocation = require("nativescript-geolocation");
 var mapsModule = require("nativescript-google-maps-sdk");
-var globalMarkers = require("../../common/globalManager");
 var nativescriptDom = require( "nativescript-dom" );
+var frame = require("ui/frame");
+var observable = require("data/observable");
+var observableArrayModule = require("data/observable-array");
+var Everlive = require('~/everlive.all.min');
+var everlive = new Everlive({
+    appId: "49mwdp1w40tbjnlg",
+    scheme: "https"
+});
 
 var closest = -1
+var markersAll = [];
+
+function loaded() {
+
+var data = everlive.data('Sait');
+    data.get().then(function(data){
+             for(var i = 0; data.result.length; i++) {
+
+               markersAll.push(data.result[i]);
+
+               console.log("ADDED OBJECT TO ARRAY " + markersAll[i].Name); 
+               console.log("ADDED OBJECT TO ARRAY " + markersAll[i].Location.longitude);
+               console.log(markersAll.length);
+               console.log("END");
+               console.log("In for cicle ---> " + markersAll.length);
+              }
+           },
+         function(error){
+         console.log("Error");
+        });
+}
+
 
 function buttonGetLocationTap(args) {
-    var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
+
+    var button = getElementById("closestLocation");
+
+    var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).  
     then(function(loc) {
         if (loc) {
 
-        var lat1 = loc.longitude;
-        var lon1 = loc.latitude;
+        var lat1 = loc.latitude;
+        var lon1 = loc.longitude;
 
         var pi = Math.PI;
         var R = 6371;
         var distances = [];
-
-
-    for( i=0;i<markers.length; i++ ) {  
+    
+    for( i = 0; i < markersAll.length - 1; i++ ) {  
  
-        var lat2 = markers[i].latitude;
-        var lon2 = markers[i].longitude; 
-
+        var lat2 = markersAll[i].Location.latitude;
+        var lon2 = markersAll[i].Location.longitude; 
+ 
         var chLat = lat2-lat1;
         var chLon = lon2-lon1;
 
@@ -42,26 +73,35 @@ function buttonGetLocationTap(args) {
         }
     }
 
-    var button = getElementById("Hi");
-    button.text = markers[closest].title;
+    button.on('swipe', function (args) {
+
+    var label = getElementById("infoLabel");
+    label.text = markersAll[closest].InterestingInformation;
+    });
+
+    button.text = markersAll[closest].Name;
         }
     }, function(e){
         console.log("Error: " + e.message);
+        button.text = "No location at the moment";
     });
 }
 
-
 function getInfo(args) {
-	console.log("Inside button with closest location");
-	var label = getElementById("infoLabel");
+    console.log("Inside button with closest location");
+    var sait = markersAll[closest];
+    if (sait) {
 
-	if(markers[closest].title == "Шумен") {
-		label.text = "Шумен град";
-	} else if(markers[closest].title == "Враца") {
-		label.text = "Враца град";
-	}else if(markers[closest].title == "Рила") {
-		label.text = "Рила планина";
-	}
+       var options = {
+    moduleName: './view/detail-sait/detail-sait',
+    context: sait
+  };
+  frame.topmost()
+    .navigate(options);
+    }
+
 }
+
 exports.buttonGetLocationTap = buttonGetLocationTap;
 exports.getInfo = getInfo;
+exports.loaded = loaded;

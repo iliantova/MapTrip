@@ -1,12 +1,5 @@
 <Page loaded="onPageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true">
-    <GridLayout rows="*, auto">
-		<ListView items="{{ photoItems }}" row="0" >
-			<ListView.itemTemplate>                
-              <GridLayout>
-                  <Image imageSource="{{ itemImage }}" row="0"/>
-              </GridLayout>               
-			</ListView.itemTemplate>
-        </ListView>
-		<Button text="{{ message }}" row="1" tap="{{ tapAction }}"/>
-    </GridLayout>
+  <StackLayout>
+    <Button text="{{ message }}" heigth="200" tap="{{ tapAction }}"/>
+  </StackLayout>>
 </Page>
