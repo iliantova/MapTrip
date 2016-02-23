@@ -1,8 +1,14 @@
 var frameModule = require("ui/frame");
 
-exports.login = function() {
+exports.map = function() {
     var topmost = frameModule.topmost();
-    topmost.navigate("/view/login/login");
+    topmost.navigate("/view/map/map");
+};
+
+
+exports.regions = function() {
+    var topmost = frameModule.topmost();
+    topmost.navigate("/view/Regions/regions");
 };
 
 exports.location = function() {
@@ -10,12 +16,8 @@ exports.location = function() {
     topmost.navigate("/view/location/location");
 };
 
-exports.regions = function() {
-    var topmost = frameModule.topmost();
-    topmost.navigate("/view/Regions/regions");
-};
-
 exports.visited = function() {
     var topmost = frameModule.topmost();
     topmost.navigate("/view/visits/user-visits");
 };
+

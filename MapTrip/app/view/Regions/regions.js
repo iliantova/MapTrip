@@ -5,25 +5,21 @@ var model = modelModule.LoginView;
 
 
 function onPageLoaded(args) {
-  var page = args.object;
-  page.bindingContext = model;
+    var page = args.object;
+    page.bindingContext = model;
 
- 
-  view.getViewById(page, 'saitList').on("itemTap", function (args) {
-  var page = args.object.page;
-  var model = page.bindingContext;
-  var index = args.index;
-  var region = model.localImagesArray.getItem(index);
-  //console.dir(region);
-  var options = {
-    moduleName: './view/saits/saits-list',
-    context: region
-  };
-  frame.topmost()
-    .navigate(options);
-});
- }
+    view.getViewById(page, 'saitList').on("itemTap", function(args) {
+        var page = args.object.page;
+        var model = page.bindingContext;
+        var index = args.index;
+        var region = model.localImagesArray.getItem(index);
+        var options = {
+            moduleName: './view/saits/saits-list',
+            context: region
+        };
+        frame.topmost()
+            .navigate(options);
+    });
+}
 
-//  function regionItemTapped(args) {
-// }
 exports.onPageLoaded = onPageLoaded;

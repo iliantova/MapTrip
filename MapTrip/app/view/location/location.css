@@ -1,0 +1,21 @@
+page {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/bb/36/c8bb368b76c0545a9ae3e5dab6c8e559.jpg");
+}
+
+#closestLocation {
+	font-size: 40;
+}
+
+.explanation {
+	font-style: italic;
+}
+
+#infoLabel {
+	font-weight: bold;
+	font-size: 20;
+}
+
+.registerform{
+	background-color: white;
+	opacity: 0.9;
+}

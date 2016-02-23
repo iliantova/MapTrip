@@ -4,6 +4,7 @@ var AppSettings = require("application-settings");
 var frameModule = require("ui/frame")
 var Toast = require("nativescript-toast");
 
+
 var everlive = new Everlive({
   appId: "49mwdp1w40tbjnlg",
   scheme: "https"

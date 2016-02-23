@@ -60,11 +60,11 @@ function(error){
   alert(JSON.stringify(error));
 });
 
-LoginView.regionsTap = function (args) {
+// LoginView.regionsTap = function (args) {
 
-var index = args.index;
-console.log(index);
+// var index = args.index;
+// console.log(index);
 
-};
+// };
 
     exports.LoginView = LoginView;

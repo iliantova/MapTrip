@@ -41,7 +41,7 @@ for (var j = 0; j < ARRAYPICTURE.length; j++) {
 }   
   }
   
- alert(JSON.stringify(data));
+ //alert(JSON.stringify(data));
 
   return saitsListArray;
 },        

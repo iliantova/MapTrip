@@ -1,15 +1,10 @@
 <Page loaded="onPageLoaded">
-   <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
-<StackLayout class="registerform" width="strech" height="250">
-        
-        <TextField id="username" hint="Username" text="{{ username }}"/>
-
-        <TextField id="password" hint="Password" secure="true" text="{{ password }}" />
-
-        <TextField id="confirmpassword" hint="Comfirm Password" secure="true" text="{{ confirmpassword }}"/>
-
-        <Button id="signUpButton" text="Sign Up" width="200" tap="{{ tapAction }}"/>
-  
-  </StackLayout>
-  </StackLayout> 
+    <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="up" TextWrapt="true" width="strech" height="strech">
+        <StackLayout class="registerform" orientation="vertical" TextWrapt="true">
+            <TextField id="username" hint="Email Address" text="{{ username }}" />
+            <TextField id="password" hint="Password" secure="true" text="{{ password }}" />
+            <TextField id="confirmpassword" hint="Confirm password" secure="true" text="{{ confirmpassword }}" />
+            <Button id="signUpButton" colSpan="2" text="Sign Up" width="100" tap="{{ tapAction }}" />
+        </StackLayout>
+    </StackLayout>
 </Page>
