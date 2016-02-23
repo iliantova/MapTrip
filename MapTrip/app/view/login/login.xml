@@ -4,7 +4,7 @@
         
         <TextField id="username" hint="Username" text="{{ username }}"/>
 
-        <TextField id="password" hint="Password" secure="true" text="{{ password }}" width="200"/>
+        <TextField id="password" hint="Password" secure="true" text="{{ password }}"/>
 
         <Button id="registerUpButton" text="Login" width="100" tap="{{ loginButton }}"/>
 

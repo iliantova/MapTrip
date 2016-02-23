@@ -1,17 +1,15 @@
 <Page loaded="onPageLoaded">
    <StackLayout class="registerformImage" orientation="vertical" verticalAlignment="center" TextWrapt="true" width="strech" height="500" >
-<GridLayout class="registerform" columns="*,3*" rows="*,*,*,*" width="strech" height="250">
+<StackLayout class="registerform" width="strech" height="250">
         
-        <TextField id="username" hint="Email Address" text="{{ username }}" width="200" col="1" row="0"/>
+        <TextField id="username" hint="Username" text="{{ username }}"/>
 
-        <Label text="Password:" col="0" row="1" />
-        <TextField id="password" secure="true" text="{{ password }}" width="200" color="white" col="1" row="1"/>
+        <TextField id="password" hint="Password" secure="true" text="{{ password }}" />
 
-        <Label text="Comfirm Password:" col="0" row="2" TextWrapt="true"/>
-        <TextField id="confirmpassword" secure="true" text="{{ confirmpassword }}" width="200" col="1" row="2"/>
+        <TextField id="confirmpassword" hint="Comfirm Password" secure="true" text="{{ confirmpassword }}"/>
 
-        <Button id="signUpButton" colSpan="2" text="Sign Up" width="100" col="0" row="3" tap="{{ tapAction }}"/>
+        <Button id="signUpButton" text="Sign Up" width="200" tap="{{ tapAction }}"/>
   
-  </GridLayout>
+  </StackLayout>
   </StackLayout> 
 </Page>
